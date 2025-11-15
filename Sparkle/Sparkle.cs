@@ -78,7 +78,7 @@ public sealed partial class Sparkle : IModSharpModule
             init += modules;
         }
 
-        _serviceProvider.LoadAllSharpExtension();
+        _serviceProvider.LoadAllSharpExtensions();
 
         return init == 0 ? throw new ApplicationException("No Modules") : true;
     }
@@ -98,7 +98,7 @@ public sealed partial class Sparkle : IModSharpModule
         CallShutdown<IModule>();
         CallShutdown<IManager>();
 
-        _serviceProvider.ShutdownAllSharpExtension();
+        _serviceProvider.ShutdownAllSharpExtensions();
 
         // You must unregister your game data when your module is unloaded.
         _bridge.GameData.Unregister("Sparkle.games");

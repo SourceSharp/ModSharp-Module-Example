@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>disable</ImplicitUsings>
         <LangVersion>13</LangVersion>
         <Nullable>enable</Nullable>
@@ -52,13 +52,13 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="ModSharp.Sharp.Extensions.EntityHookManager" Version="2.0.22" />
-        <PackageReference Include="ModSharp.Sharp.Extensions.GameEventManager" Version="2.0.22" />
-        <PackageReference Include="ModSharp.Sharp.Generator.Sdk" Version="2.0.22">
+        <PackageReference Include="ModSharp.Sharp.Extensions.EntityHookManager" Version="2.1.*" />
+        <PackageReference Include="ModSharp.Sharp.Extensions.GameEventManager" Version="2.1.*" />
+        <PackageReference Include="ModSharp.Sharp.Generator.Sdk" Version="2.1.*">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
-        <PackageReference Include="ModSharp.Sharp.Shared" Version="2.0.22" PrivateAssets="all" />
+        <PackageReference Include="ModSharp.Sharp.Shared" Version="2.1.*" PrivateAssets="all" />
     </ItemGroup>
 
     <ItemGroup>
